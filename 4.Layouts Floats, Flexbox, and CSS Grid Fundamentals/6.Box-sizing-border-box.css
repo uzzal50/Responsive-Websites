@@ -1,0 +1,19 @@
+/*
+//! this is default behaviour
+final element width = right border + right padding + width + left padding + left border
+final element height = top border + top padding + height + bottom padding + botttom border  
+
+//after box sizing =  border-box
+final element width = width
+final height width = height 
+
+ when we add padding in the element it will subtract from content area in border-box  
+
+ if element ko width 300px cha border box chaina vaney tesma padding ko width haru ni include hudaina. 
+
+*/
+
+* {
+  /* box-sizing: content-box;  the default one*/
+  box-sizing: border-box;
+}
