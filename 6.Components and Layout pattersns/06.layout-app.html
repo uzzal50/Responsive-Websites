@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>App layout</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: sans-serif;
+      color: #343a40;
+      font-size: 24px;
+      height: 100vh;
+      display: grid;
+      grid-template-columns: 80px 400px 1fr 250px;
+      grid-template-rows: 80px 1fr;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    nav {
+      background-color: #343a40;
+      color: #fff;
+      grid-row: 1 / -1;
+      padding-top: 24px;
+    }
+    menu {
+      background-color: #7048e8;
+      color: #fff;
+      grid-column: 2 / -1;
+
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 0 40px;
+    }
+    button:last-child {
+      background-color: #d6336c;
+      margin-left: auto;
+    }
+    aside {
+      background-color: #e9ecef;
+      padding-top: 24px;
+    }
+    section {
+      background-color: #e9ecef;
+      padding-top: 24px;
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      overflow: scroll;
+      /* how elements that dont fit into container appear  */
+    }
+    .email {
+      background-color: #adb5bd;
+      height: 96px;
+      /* It works because text acts as flex item */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    main {
+      padding-top: 24px;
+    }
+    button {
+      font-size: 16px;
+      background-color: #5f3dc4;
+      border: none;
+      color: #fff;
+      padding: 8px 12px;
+      font-weight: bold;
+      display: inline-block;
+    }
+  </style>
+  <body>
+    <nav>Nav</nav>
+    <menu>
+      <button>new</button>
+      <button>rep[ly</button>
+      <button>forward</button>
+      <button>trash</button>
+    </menu>
+    <section>
+      <div class="email">Email 1</div>
+      <div class="email">Email 1</div>
+      <div class="email">Email 1</div>
+      <div class="email">Email 1</div>
+      <div class="email">Email 1</div>
+      <div class="email">Email 1</div>
+      <div class="email">Email 1</div>
+      <div class="email">Email 1</div>
+      <div class="email">Email 1</div>
+      <div class="email">Email 1</div>
+      <div class="email">Email 1</div>
+      <div class="email">Email 1</div>
+      <div class="email">Email 1</div>
+    </section>
+    <main>Email View</main>
+    <aside>Additional Info</aside>
+  </body>
+</html>
