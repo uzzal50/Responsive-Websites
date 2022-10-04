@@ -29,6 +29,7 @@ ACCESNTS :
 GREY : #555, #333
 #6f6f6f;(loghest grey allowed on )
  # eb984e
+ #45260a;
 
 ---05.  SHADOWS
   box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
@@ -84,6 +85,9 @@ body {
   grid-template-columns: repeat(2, 1fr);
 }
 
+.grid--5-cols {
+  grid-template-columns: repeat(5, 1fr);
+}
 .grid--center-v {
   align-items: center;
 }
@@ -132,6 +136,18 @@ body {
   letter-spacing: 0.75px;
 }
 
+.btn--form {
+  background-color: #45260a;
+  color: #fdf2e9;
+  font-family: 'Rubik', sans-serif;
+  align-self: end;
+  padding: 1.2rem;
+}
+.btn--form:hover {
+  background-color: #fff;
+  color: #333;
+}
+.btn,
 .btn:link,
 .btn:visited {
   color: #fff;
@@ -142,6 +158,10 @@ body {
   border-radius: 9px;
   font-weight: 600;
   transition: all 0.3s;
+  /* only for .btn */
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
 }
 
 .btn--full:link,
@@ -219,4 +239,11 @@ strong {
   width: 3rem;
   height: 3rem;
   color: #e67e22;
+}
+
+*:focus {
+  outline: none;
+  /* outline: 4px dotted #e67e22;
+  outline-offset: 0px; */
+  box-shadow: 0 0 0 0.8rem rgba(230, 125, 34, 0.5);
 }
