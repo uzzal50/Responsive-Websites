@@ -18,6 +18,7 @@ DEFIAULT  = 1
  small =1.05
  medium = 1.2
 paragraph default = 1.6  
+large = 1.8
 
 --- letter-spacing: 0.75px , -0.5px;
 ---02. COLORS
@@ -49,6 +50,8 @@ html {
   /* 10px / 16px = 0.625 = 62.5   % */
   /* Percentage of users browser font-size settigs */
   font-size: 62.5%;
+
+  overflow-x: hidden;
 }
 
 body {
@@ -56,6 +59,8 @@ body {
   line-height: 1;
   font-weight: 400;
   color: #555;
+  /* only worsk if there is nothing absolutely positioned in realtion to body */
+  overflow-x: hidden;
 }
 
 /* **************************  */
@@ -233,6 +238,7 @@ strong {
   align-items: center;
   font-size: 1.8rem;
   gap: 1.6rem;
+  line-height: 1.2;
 }
 
 .list-icon {
